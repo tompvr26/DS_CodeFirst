@@ -22,6 +22,7 @@ namespace DSCodeFirst.ORM
 
         public virtual ICollection<Client> Clients { get; set; }
 
+
         public Jeu()
         {
             Clients = new List<Client>();

@@ -55,12 +55,36 @@
     <Compile Include="ContextBDD.cs" />
     <Compile Include="Echange.cs" />
     <Compile Include="Jeu.cs" />
+    <Compile Include="Migrations\201911141456394_hop.cs" />
+    <Compile Include="Migrations\201911141456394_hop.designer.cs">
+      <DependentUpon>201911141456394_hop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911141503548_hop1.cs" />
+    <Compile Include="Migrations\201911141503548_hop1.designer.cs">
+      <DependentUpon>201911141503548_hop1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911141516044_test.cs" />
+    <Compile Include="Migrations\201911141516044_test.designer.cs">
+      <DependentUpon>201911141516044_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reservation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201911141456394_hop.resx">
+      <DependentUpon>201911141456394_hop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911141503548_hop1.resx">
+      <DependentUpon>201911141503548_hop1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911141516044_test.resx">
+      <DependentUpon>201911141516044_test.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
