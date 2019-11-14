@@ -7,15 +7,25 @@ using System.Threading.Tasks;
 
 namespace DSCodeFirst.ORM
 {
-    public class Jeux
+    public class Jeu
     {
         [Key]
-        public int Id { get; set; }
+        public int IdJeu { get; set; }
 
         [StringLength(50)]
         public string Nom { get; set; }
 
         [StringLength(50)]
         public string Plateforme { get; set; }
+
+        public bool Stock{ get; set; }
+
+        public virtual ICollection<Client> Clients { get; set; }
+
+        public Jeu()
+        {
+            Clients = new List<Client>();
+
+        }
     }
 }
